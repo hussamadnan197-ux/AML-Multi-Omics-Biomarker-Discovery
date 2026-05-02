@@ -1,20 +1,39 @@
 import requests
-import json
+import pandas as pd
 
-def get_cancer_project_stats(project_id):
-    """جلب إحصائيات عينات السرطان من قاعدة بيانات GDC"""
-    url = f"https://api.gdc.cancer.gov/projects/{project_id}"
-    response = requests.get(url)
+def fetch_sample_data(project_id):
+    # رابط البحث عن العينات في قاعدة بيانات GDC
+    url = "https://api.gdc.cancer.gov/cases"
+    
+    # تحديد الفلاتر (نريد فقط عينات هذا المشروع المحدد)
+    filters = {
+        "op": "in",
+        "content": {
+            "field": "project.project_id",
+            "value": [project_id]
+        }
+    }
+    
+    params = {
+        "filters": json.dumps(filters) if 'json' in globals() else str(filters).replace("'", '"'),
+        "fields": "case_id,primary_site,disease_type,submitter_id",
+        "format": "JSON",
+        "size": "10"
+    }
+    
+    import json # للتأكد من التحويل
+    params["filters"] = json.dumps(filters)
+
+    response = requests.get(url, params=params)
     
     if response.status_code == 200:
-        data = response.json()['data']
-        print(f"Project ID: {data['project_id']}")
-        print(f"Disease Type: {data['disease_type']}")
-        print(f"Total Cases: {data['summary']['case_count']}")
-        print(f"Total Files: {data['summary']['file_count']}")
+        results = response.json()["data"]["hits"]
+        df = pd.DataFrame(results)
+        print("Successfully fetched sample metadata:")
+        print(df.head())
+        return df
     else:
-        print("Error fetching data.")
+        print("Failed to fetch data.")
 
 if __name__ == "__main__":
-    # سنبدأ بتجربة سرطان الدم بما أنك تعمل في مختبر باثولوجي
-    get_cancer_project_stats("TCGA-LAML") 
+    fetch_sample_data("TCGA-LAML")
