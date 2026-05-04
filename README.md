@@ -14,3 +14,9 @@ After connecting to the GDC API, I analyzed 100 real clinical cases of Acute Mye
 - **Average Age:** 56.52 years.
 - **Key Observation:** The data shows a significant increase in cases for patients above the age of 60.
 ![Real Age Distribution](real_age_distribution.png)
+## 🧬 Gene Expression Profiling (RNA-Seq)
+I processed raw transcriptomic data from a TCGA-LAML patient to identify high-abundance gene transcripts.
+- **Top Gene:** `MT-RNR2` (Mitochondrial Ribosomal RNA 2).
+- **Insight:** High expression of mitochondrial genes suggests intense metabolic demands within the leukemic cells.
+
+![Top Expressed Genes](top_expressed_genes.png)
