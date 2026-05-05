@@ -62,25 +62,3 @@ The architecture is built for scalability and transparency:
 * **Execution:** Run `data_acquisition.py` to trigger the automated fetch and full analytical sequence.
 
 ---
-# 🧬 AML Analysis Report
-
-This project integrates clinical and genomic data. Below is the unified analysis report:
-
-### 1. Demographics
-<p align="center">
-  <img src="figures/gender_dist.png" width="45%">
-  <img src="figures/age_histogram.png" width="45%">
-</p>
-
-### 2. Survival Results
-<p align="center">
-  <img src="figures/molecular_risk_impact.png" width="80%">
-  <br>
-  <em>Figure: Impact of Genomic Risk on Survival</em>
-</p>
-
-### 3. Overall & Clinical Comparison
-<p align="center">
-  <img src="figures/overall_survival.png" width="45%">
-  <img src="figures/ل.png" width="45%">
-</p>
