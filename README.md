@@ -62,33 +62,5 @@ The architecture is built for scalability and transparency:
 * **Execution:** Run `data_acquisition.py` to trigger the automated fetch and full analytical sequence.
 
 ---
-# 🧬 Multi-Omics Analysis of TCGA-LAML
-
-## 📊 Phase 2: Integrated Results
-
-### 1. Cohort Demographics
-| Gender Distribution | Age at Diagnosis |
-|---|---|
-| ![Gender](figures/gender_dist.png) | ![Age](figures/age_histogram.png) |
-| *Balanced gender ratio.* | *Mean Age: 56.52 years.* |
-
----
-
-### 2. Survival Analysis Modeling
-
-#### **I. Molecular Risk Impact (Key Milestone)**
-By integrating genomic mutations with clinical data, we identified significant survival divergence.
-<p align="center">
-  <img src="figures/molecular_risk_impact.png" width="750">
-</p>
-
-#### **II. Baseline & Clinical Comparisons**
-<p align="center">
-  <img src="figures/overall_survival.png" width="400">
-  <img src="figures/ل.png" width="400">
-</p>
-
----
-
-## ✅ Project Status: Phase 2 Complete
-All visualizations are now integrated into the final analytical pipeline.
+Gender Distribution,Age at Diagnosis
+,
