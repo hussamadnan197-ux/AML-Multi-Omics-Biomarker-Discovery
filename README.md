@@ -62,5 +62,4 @@ The architecture is built for scalability and transparency:
 * **Execution:** Run `data_acquisition.py` to trigger the automated fetch and full analytical sequence.
 
 ---
-Gender Distribution,Age at Diagnosis
-,
+
