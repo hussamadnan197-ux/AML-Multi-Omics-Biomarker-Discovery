@@ -16,7 +16,7 @@
 ​Geriatric Stratification: A comparative analysis between seniors (>60) and younger patients (≤60) demonstrated a distinct divergence in survival trajectories.
 ​Molecular Risk Correlation: By integrating genomic risk profiles, we validated that patients with high-risk molecular signatures exhibit a significantly accelerated decline in survival probability.
 ​<p align="center">
-<img src="overall_survival.png" width="45%" />
+<img src="figures/figures/figures/figures/figures/figures/figures/figures/figures/overall_survival.png" width="45%" />
 <img src="molecular_risk_impact.png" width="45%" />
 </p>
 <p align="center"><em>Fig 2: Kaplan-Meier survival curves demonstrating the impact of age and molecular risk on clinical prognosis.</em></p>
