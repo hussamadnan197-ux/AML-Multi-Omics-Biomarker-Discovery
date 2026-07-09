@@ -14,6 +14,7 @@
 **Analysis:** Multi-Omics Integration
 
 **Current Stage:** Survival Analysis & Biomarker Discovery
+---
 ## 📌 Abstract
 
 Acute Myeloid Leukemia (AML) is a heterogeneous hematological malignancy characterized by substantial genomic and clinical variability.
@@ -37,7 +38,9 @@ The objective is to identify prognostic biomarkers associated with patient survi
 - 📈 Kaplan–Meier survival analysis using Lifelines.
 - 🔬 Identification of candidate prognostic biomarkers.
 - 💻 Developed using Python and open-source bioinformatics libraries.
-------
+
+   ---
+
 # 📊 Results & Visualizations
 
 ## 1. Cohort Demographics
